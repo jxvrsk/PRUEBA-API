@@ -28,32 +28,33 @@
     <div class="row medium-8 large-7 columns">
         <div class="blog-post">
             <h3 style="text-align: center;">Convierta sus bitcoins de dolares a pesos chilenos</h3><br>
+            <form action="/api" method="get">
+            @csrf
                 <div class="form-icons">
                     <div class="input-group">
-                        <h6 class="input-group-label">BIT
-        </h6>
-                        <input class="input-group-field" type="number"  value="1" disabled>
+                        <h6 class="input-group-label">BIT</h6>
+                        <input class="input-group-field" type="number" placeholder="1" id="bitcoin" name="bitcoin" value="{{$bitcoin}}"  this.>
                     </div>
 
                     <div class="input-group">
-                    <h6 class="input-group-label">USD
-        </h6>
-        <input class="input-group-field" type="text"  id="dolar" readonly="readonly"   disabled value="${{$dolarr}}">
+                        <h6 class="input-group-label">USD</h6>
+                        <input class="input-group-field" type="text"  id="dolar" readonly="readonly"   disabled value="${{$dolarParse}}">
                     </div>
 
                     <div class="input-group">
-                    <h6 class="input-group-label">CLP
-        </h6>
-        <input class="input-group-field" type="text"  readonly  disabled value="${{$clpp}}">
+                         <h6 class="input-group-label">CLP </h6>
+                            <input class="input-group-field" type="text"  readonly  disabled value="${{$clpParse}}">
                     </div>
                     <div class="input-group">
-                    <h6 class="input-group-label">Fecha
-        </h6>
-        <input class="input-group-field" type="text" readonly disabled value="{{$fecha}}">
+                         <h6 class="input-group-label">Fecha</h6>
+                        <input class="input-group-field" type="text" readonly disabled value="{{$fecha}}">
                     </div>
+                    <div class="input-group">
+                        <button class="button expanded">Convertir</button>
+                    </div>
+
                 </div>
-
-
+            </form>
         </div>
     </div>
 

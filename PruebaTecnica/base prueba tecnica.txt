@@ -1,0 +1,51 @@
+Prueba Técnica
+Requerimiento: Obtener el valor de cuantos dólares vale un bitcoin y luego convertirlo a pesos, se establece que un dólar es equivalente a 700 pesos. 
+Son 3 artefactos que deberán ser creados.
+
+	- Una Api que recupere la información desde el origen y entregue en json el monto convertido en pesos
+	- Una página que pueda mostrar el contenido junto con la fecha completa de cuando el usuario recupero la consulta***
+	- Una app movil en android que consuma la api y muestre el valor convertido.
+	- Diagrama de flujo de la aplicación
+	- Propuesta de diseño de BD para persistir la información
+Recursos:
+
+Obtener valor de bitcoin https://api.coindesk.com/v1/bpi/currentprice.json (ejemplo: https://www.coindesk.com/coindesk-api)
+Como consumir un Json https://coderwall.com/p/by_udg/consumiendo-un-webservice-con-jquery-y-json
+Crear una aplicación React Native: https://reactnative.dev/docs/getting-started *
+Configurar React con CLI (apartado "React Native CLI Quickstart" https://reactnative.dev/docs/environment-setup *
+Android Studio https://developer.android.com/studio*
+VS Code para windows https://code.visualstudio.com/ *
+
+
+
+Evaluación:
+Toma de requerimiento
+Api
+App Web
+App Movil
+Diseño Flujo aplicación
+Diseño de base de datos
+Tiempo utilizado 
+Calidad de Codigo
+******************************************----*************************************************************
+
+Hola estimado adjunto la prueba técnica.
+El api de laravel esta en localhost pero también esta en el hosting de heroku ya que para mostrar los datos en el emulador de android me presento un error en el Http y la solución era tener certificado ssl por lo que lo subí al hosting y consumo el api que cree en laravel directo del hosting.
+El codigo de la api se encuntra en la ruta routes/api.
+las rutas están en los diagramas pero igual las dejare acá:
+Mostrar datos.
+
+Local: http://127.0.0.1:8000/api/Datos
+
+Hosting: https://serene-citadel-62957.herokuapp.com/api/Datos
+
+
+Json de conversión.
+Local: http://127.0.0.1:8000/api/Clp
+
+Hosting: https://serene-citadel-62957.herokuapp.com/api/Clp
+
+Área de archivos adjuntos
+
+
+

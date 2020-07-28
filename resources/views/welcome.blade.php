@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
         <!-- Styles -->
         <style>
-            #text{
-                
-            }
-            
-                
-            
+            input:disabled
+{
+	background-color   : #FFFFFF;
+}
         </style>
     </head>
     <body>
@@ -34,24 +32,24 @@
                     <div class="input-group">
                         <h6 class="input-group-label">BIT
         </h6>
-                        <input class="input-group-field" type="number" disabled value="1" style=>
+                        <input class="input-group-field" type="number"  value="1" disabled>
                     </div>
 
                     <div class="input-group">
                     <h6 class="input-group-label">USD
         </h6>
-        <input class="input-group-field" type="text"  id="dolar"readonly value="${{$dolarr}}">
+        <input class="input-group-field" type="text"  id="dolar" readonly="readonly"   disabled value="${{$dolarr}}">
                     </div>
 
                     <div class="input-group">
                     <h6 class="input-group-label">CLP
         </h6>
-        <input class="input-group-field" type="text"  readonly value="${{$clpp}}">
+        <input class="input-group-field" type="text"  readonly  disabled value="${{$clpp}}">
                     </div>
                     <div class="input-group">
                     <h6 class="input-group-label">Fecha
         </h6>
-        <input class="input-group-field" type="text" readonly value="{{$fecha}}">
+        <input class="input-group-field" type="text" readonly disabled value="{{$fecha}}">
                     </div>
                 </div>
 
